@@ -1,0 +1,182 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import 'shadcn/tailwind.css';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --color-foreground: var(--foreground);
+  --color-background: var(--background);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+:root {
+  color-scheme: dark;
+  --background: #08090d;
+  --foreground: #f2f0ea;
+  --card: #10121a;
+  --card-foreground: #f2f0ea;
+  --popover: #10121a;
+  --popover-foreground: #f2f0ea;
+  --primary: #b49a63;
+  --primary-foreground: #08090d;
+  --secondary: #14161f;
+  --secondary-foreground: #f2f0ea;
+  --muted: #14161f;
+  --muted-foreground: #a9a7a0;
+  --accent: #1a1c27;
+  --accent-foreground: #f2f0ea;
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: rgba(255, 255, 255, 0.1);
+  --input: rgba(255, 255, 255, 0.12);
+  --ring: #b49a63;
+  --chart-1: #b49a63;
+  --chart-2: #8b8fa8;
+  --chart-3: #6b6f8a;
+  --chart-4: #4a4d63;
+  --chart-5: #2a2c3a;
+  --radius: 0.25rem;
+  --sidebar: #10121a;
+  --sidebar-foreground: #f2f0ea;
+  --sidebar-primary: #b49a63;
+  --sidebar-primary-foreground: #08090d;
+  --sidebar-accent: #1a1c27;
+  --sidebar-accent-foreground: #f2f0ea;
+  --sidebar-border: rgba(255, 255, 255, 0.1);
+  --sidebar-ring: #b49a63;
+
+  /* Astral Vault brand tokens */
+  --vault-bg: #08090d;
+  --vault-bg-secondary: #10121a;
+  --vault-ink: #f2f0ea;
+  --vault-ink-muted: #a9a7a0;
+  --vault-gold: #b49a63;
+  --vault-gold-bright: #d4bc82;
+  --vault-violet: #5b5a7a;
+  --vault-border: rgba(255, 255, 255, 0.1);
+}
+
+.dark {
+  color-scheme: dark;
+  --background: #08090d;
+  --foreground: #f2f0ea;
+  --card: #10121a;
+  --card-foreground: #f2f0ea;
+  --popover: #10121a;
+  --popover-foreground: #f2f0ea;
+  --primary: #b49a63;
+  --primary-foreground: #08090d;
+  --secondary: #14161f;
+  --secondary-foreground: #f2f0ea;
+  --muted: #14161f;
+  --muted-foreground: #a9a7a0;
+  --accent: #1a1c27;
+  --accent-foreground: #f2f0ea;
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: rgba(255, 255, 255, 0.1);
+  --input: rgba(255, 255, 255, 0.12);
+  --ring: #b49a63;
+  --chart-1: #b49a63;
+  --chart-2: #8b8fa8;
+  --chart-3: #6b6f8a;
+  --chart-4: #4a4d63;
+  --chart-5: #2a2c3a;
+  --sidebar: #10121a;
+  --sidebar-foreground: #f2f0ea;
+  --sidebar-primary: #b49a63;
+  --sidebar-primary-foreground: #08090d;
+  --sidebar-accent: #1a1c27;
+  --sidebar-accent-foreground: #f2f0ea;
+  --sidebar-border: rgba(255, 255, 255, 0.1);
+  --sidebar-ring: #b49a63;
+}
+
+@theme inline {
+  --font-sans: var(--font-sans);
+  --font-display: var(--font-display);
+  --font-editorial: var(--font-editorial);
+  --color-vault-bg: var(--vault-bg);
+  --color-vault-bg-secondary: var(--vault-bg-secondary);
+  --color-vault-ink: var(--vault-ink);
+  --color-vault-ink-muted: var(--vault-ink-muted);
+  --color-vault-gold: var(--vault-gold);
+  --color-vault-gold-bright: var(--vault-gold-bright);
+  --color-vault-violet: var(--vault-violet);
+  --color-vault-border: var(--vault-border);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display), serif;
+  }
+  .font-editorial {
+    font-family: var(--font-editorial), serif;
+  }
+  .text-gold {
+    color: var(--vault-gold);
+  }
+  .bg-vault-radial {
+    background: radial-gradient(circle at 50% 0%, rgba(180, 154, 99, 0.08), transparent 60%);
+  }
+  .divider-ornament {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+  }
+  .divider-ornament::before,
+  .divider-ornament::after {
+    content: '';
+    height: 1px;
+    width: 3rem;
+    background: linear-gradient(90deg, transparent, rgba(180, 154, 99, 0.5));
+  }
+  .divider-ornament::after {
+    background: linear-gradient(90deg, rgba(180, 154, 99, 0.5), transparent);
+  }
+}
