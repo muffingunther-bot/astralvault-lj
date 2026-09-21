@@ -23,9 +23,7 @@ export function StorySection() {
             Built By Collectors Who Got Tired of Getting Burned
           </h2>
           <p className="text-base text-vault-ink-muted leading-relaxed">
-            Astral Vault started in a spare bedroom with three shoeboxes of vintage cards and a
-            simple frustration: every mystery box on the market either exaggerated its odds or
-            hid its contents behind vague marketing.
+            Step into a throwback with our limited-time Mystery Packs! Each pack features a chance to discover cards inspired by iconic eras including Fossil, Base Set, 2nd Generation, Jungle, and Neo Destiny. With exclusive cards tied to each featured set, every pack brings a little nostalgia and a surprise waiting to be uncovered.
           </p>
           <p className="text-base text-vault-ink-muted leading-relaxed">
             We built the vault we wished existed — one where the guarantee printed on the box is
