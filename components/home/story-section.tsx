@@ -20,7 +20,7 @@ export function StorySection() {
             Our Story
           </span>
           <h2 className="font-display text-3xl sm:text-4xl tracking-wide text-vault-ink">
-            Built By Collectors Who Got Tired of Getting Burned
+            VINTAGE MYSTERY PACK SALE RUNNING NOW!
           </h2>
           <p className="text-base text-vault-ink-muted leading-relaxed">
             Step into a throwback with our limited-time Mystery Packs! Each pack features a chance to discover cards inspired by iconic eras including Fossil, Base Set, 2nd Generation, Jungle, and Neo Destiny. With exclusive cards tied to each featured set, every pack brings a little nostalgia and a surprise waiting to be uncovered.
